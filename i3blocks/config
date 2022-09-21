@@ -1,0 +1,41 @@
+separator=false
+
+[timespacer]
+full_text=
+color=#636369
+
+[cpu]
+full_text=cpu
+command=exec ~/Document/Code/Shell/cpuUser.sh
+interval=1
+
+[timespacer]
+full_text=
+color=#636369
+
+[ram]
+full_text=ram
+command=exec ~/Document/Code/Shell/testI3Blocks.sh
+interval=1
+
+[timespacer]
+full_text=
+color=#636369
+
+[date]
+full_text=Date
+color=#a0a0a6
+command=exec ~/Document/Code/Shell/date.sh
+interval=1800
+
+[timespacer]
+full_text=
+color=#636369
+
+[time]
+full_text=Time
+command=date "+%H·%M·%S"
+color=#a0a0a6
+interval=1
+
+

@@ -1,0 +1,97 @@
+/*******************************************************************************
+ * ROFI Color theme
+ * By: denso666
+ *******************************************************************************/
+
+* {
+    bg0:    rgba(39, 39, 42, 0.98);
+    bg1:    #636369;
+    bg2:    #45454a;
+
+    fg0:    #818188;
+    fg1:    #a0a0a6;
+    fg2:    #636369;
+
+    background-color:   transparent;
+    text-color:         @fg1;
+    font:               "JetBrains Mono 16";
+    highlight: bold italic underline;
+
+    margin:     0;
+    padding:    0;
+    spacing:    0;
+}
+
+window {
+    background-color:   @bg0;
+    location:       center;
+    width:          1000;
+    y-offset:       0;
+    x-offset:       0;
+    border-radius:  10;
+}
+
+inputbar {
+    font:       "JetBrains Mono 17";
+    padding:    18px;
+    spacing:    18px;
+    children:   [ icon-search, entry ];
+}
+
+icon-search {
+    expand:     false;
+    filename:   "penguin";
+    size: 28px;
+}
+
+entry {
+    font:               inherit;
+    placeholder:        "What do you want?";
+    placeholder-color:  @fg2;
+}
+
+icon-search, entry, element-icon, element-text {
+    vertical-align: 0.5;
+}
+
+message {
+    border:             2px 0 0;
+    border-color:       @bg1;
+    background-color:   @bg1;
+}
+
+textbox {
+    padding:    8px 24px;
+}
+
+listview {
+    lines:      15;
+    columns:    2;
+
+    fixed-height:   false;
+    border:         1px 0 0;
+    border-color:   @bg1;
+}
+
+element {
+    padding:            8px 16px;
+    spacing:            16px;
+    background-color:   transparent;
+}
+
+element normal active {
+    text-color: @bg2;
+}
+
+element selected normal, element selected active {
+    background-color:   @bg2;
+    text-color:         @fg1;
+}
+
+element-icon {
+    size:   1em;
+}
+
+element-text {
+    text-color: inherit;
+}
